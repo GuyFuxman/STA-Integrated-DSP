@@ -1,0 +1,155 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+# Date created = 10:14:38  September 13, 2022
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		DCC_STA_Modified_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSXFC6D6F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY Windowed_Block_Diagram_Modified
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:14:38  SEPTEMBER 13, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_FILE ADC_DCC.vhd
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/STA.qpf
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/FFT_Controller.vhd.bak
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/STA_assignment_defaults.qdf
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/D_Flip_Flop.vhd.bak
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/FFT_Result_Manager.vhd.bak
+set_global_assignment -name QSYS_FILE ../STA_DSP_Modified/unnamed.qsys
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/unnamed.sopcinfo
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/AndLogic.vhd
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/AndGate.bsf
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/Convolution_Hann
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/Window_Multipication.vhd.bak
+set_global_assignment -name TEXT_FILE ../STA_DSP_Modified/stp2_auto_signaltap_0.txt
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/fft_dataSource.vhd
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/fft_dataSource.bsf
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/bit_reversed.vhd.bak
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/Delay_DFF.vhd
+set_global_assignment -name QSYS_FILE ../STA_DSP_Modified/NCO.qsys
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/NCO.sopcinfo
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/bit_reversed.vhd
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/bit_reversed.bsf
+set_global_assignment -name BDF_FILE ../STA_DSP_Modified/Yoav_FFT_Try.bdf
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/signed_adder.vhd.bak
+set_global_assignment -name BDF_FILE ../STA_DSP_Modified/Top_Level_BDF.bdf
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/signed_adder.vhd
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/signed_adder.bsf
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/vector_moduleSquared.vhd
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/vector_moduleSquared.bsf
+set_global_assignment -name MIF_FILE ../STA_DSP_Modified/mif_hann.mif
+set_global_assignment -name TEXT_FILE ../STA_DSP_Modified/stp2_PLL.txt
+set_global_assignment -name TEXT_FILE ../STA_DSP_Modified/stp2_auto_signaltap_4.txt
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/First.sdc.bak
+set_global_assignment -name SDC_FILE ../STA_DSP_Modified/STA.out.sdc
+set_global_assignment -name SDC_FILE ../STA_DSP_Modified/First.sdc
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/HPS_Converter.vhd.bak
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/Fixed_Point_Data_Sizer.vhd.bak
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/HPS_Converter.vhd
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/HPS_Converter.bsf
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/Fixed_Point_Data_Sizer.vhd
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/Fixed_Point_Data_Sizer.bsf
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/IFFT_Data_Sender.vhd.bak
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/IFFT_Data_Sender.vhd
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/IFFT_Data_Sender.bsf
+set_global_assignment -name BDF_FILE ../STA_DSP_Modified/IFFT_Try.bdf
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/old_rtl_netlist
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/new_rtl_netlist
+set_global_assignment -name TEXT_FILE "../STA_DSP_Modified/Pin Description.txt"
+set_global_assignment -name BDF_FILE ../STA_DSP_Modified/Multiple_NCO.bdf
+set_global_assignment -name BDF_FILE ../STA_DSP_Modified/IFFT_Component.bdf
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/IFFT_Component.bsf
+set_global_assignment -name BDF_FILE ../STA_DSP_Modified/IFFT_Block_Diagram.bdf
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/Demux.vhd
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/Demux.bsf
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/FFT_Result_Manager.vhd
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/FFT_Result_Manager.bsf
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/D_Flip_Flop.bsf
+set_global_assignment -name BDF_FILE ../STA_DSP_Modified/RAM_Included_BDF.bdf
+set_global_assignment -name BDF_FILE ../STA_DSP_Modified/FFT_Result_Calculator.bdf
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/FFT_Result_Calculator.bsf
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/MIF1024.xlsx
+set_global_assignment -name MIF_FILE ../STA_DSP_Modified/Hann1024.mif
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/Three_Filter_RAM_Manager.vhd.bak
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/Window_Multipication.bsf
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/Window_Multipication.vhd
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/FFT_Controller.vhd
+set_global_assignment -name BDF_FILE ../STA_DSP_Modified/Packeted_FFT_Component.bdf
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/Packeted_FFT_Component.bsf
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/FFT_Compenent.bsf
+set_global_assignment -name BDF_FILE ../STA_DSP_Modified/Windowed_Block_Diagram.bdf
+set_global_assignment -name BDF_FILE ../STA_DSP_Modified/FFT_Compenent.bdf
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/D_Flip_Flop.vhd
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/packetizer.vhd
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/packetizer.bsf
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/FFT_Result_Manager_Modified.vhd
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/FFT_Result_Manager_Modified.bsf
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/cr_ie_info.json
+set_global_assignment -name QSYS_FILE ../STA_DSP_Modified/FFT.qsys
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/FFT.sopcinfo
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/Data_Transfer.vhd.bak
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/Window_Multipication_Modified.bsf
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/FFT_Controller_Modified.vhd.bak
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/Data_Transfer.vhd
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/Data_Transfer.bsf
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/FFT_Controller.bsf
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/FFT_Controller_Modified.bsf
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/Three_Filter_RAM_Manager.vhd
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/Three_Filter_RAM_Manager.bsf
+set_global_assignment -name BDF_FILE ../STA_DSP_Modified/Three_Filter_RAM_Manager_Block.bdf
+set_global_assignment -name BSF_FILE ../STA_DSP_Modified/Three_Filter_RAM_Manager_Block.bsf
+set_global_assignment -name BDF_FILE ../STA_DSP_Modified/Windowed_Block_Diagram_Modified.bdf
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/RAM.sopcinfo
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/IFFT.sopcinfo
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/PLL.sopcinfo
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/altera_cordic.sopcinfo
+set_global_assignment -name TEXT_FILE ../STA_DSP_Modified/c5_pin_model_dump.txt
+set_global_assignment -name SIGNALTAP_FILE ../STA_DSP_Modified/stp2.stp
+set_global_assignment -name VHDL_FILE ../STA_DSP_Modified/FFT_Controller_Modified.vhd
+set_global_assignment -name SOURCE_FILE ../STA_DSP_Modified/STA.qsf
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
+set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

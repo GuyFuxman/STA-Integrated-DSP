@@ -1,0 +1,164 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 592 208)
+	(text "FFT_Result_Calculator" (rect 5 0 137 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 171 24 188)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "i_Real_Data[(FFT_In_Data_Width - 1)..0]" (rect 0 0 239 19)(font "Intel Clear" (font_size 8)))
+		(text "i_Real_Data[(FFT_In_Data_Width - 1)..0]" (rect 21 27 260 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "PLL_Output_Clock" (rect 0 0 109 19)(font "Intel Clear" (font_size 8)))
+		(text "PLL_Output_Clock" (rect 21 43 130 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "i_Imag_Data[(FFT_In_Data_Width - 1)..0]" (rect 0 0 243 19)(font "Intel Clear" (font_size 8)))
+		(text "i_Imag_Data[(FFT_In_Data_Width - 1)..0]" (rect 21 59 264 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "Reset_Switch" (rect 0 0 79 19)(font "Intel Clear" (font_size 8)))
+		(text "Reset_Switch" (rect 21 75 100 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "i_Switches[5..0]" (rect 0 0 93 19)(font "Intel Clear" (font_size 8)))
+		(text "i_Switches[5..0]" (rect 21 91 114 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "Packet_Manager_sop" (rect 0 0 126 19)(font "Intel Clear" (font_size 8)))
+		(text "Packet_Manager_sop" (rect 21 107 147 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "Packet_Manager_eop" (rect 0 0 127 19)(font "Intel Clear" (font_size 8)))
+		(text "Packet_Manager_eop" (rect 21 123 148 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "Packet_Manager_valid" (rect 0 0 134 19)(font "Intel Clear" (font_size 8)))
+		(text "Packet_Manager_valid" (rect 21 139 155 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 576 32)
+		(output)
+		(text "NCO_In_Data[(FFT_In_Data_Width - 1)..0]" (rect 0 0 247 19)(font "Intel Clear" (font_size 8)))
+		(text "NCO_In_Data[(FFT_In_Data_Width - 1)..0]" (rect 308 27 555 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 576 32)(pt 560 32)(line_width 3))
+	)
+	(port
+		(pt 576 48)
+		(output)
+		(text "o_Squared_Data[Magnitude_Width-1..0]" (rect 0 0 240 19)(font "Intel Clear" (font_size 8)))
+		(text "o_Squared_Data[Magnitude_Width-1..0]" (rect 315 43 555 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 576 48)(pt 560 48)(line_width 3))
+	)
+	(port
+		(pt 576 64)
+		(output)
+		(text "NCO_One_In_Data[(FFT_In_Data_Width - 1)..0]" (rect 0 0 278 19)(font "Intel Clear" (font_size 8)))
+		(text "NCO_One_In_Data[(FFT_In_Data_Width - 1)..0]" (rect 277 59 555 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 576 64)(pt 560 64)(line_width 3))
+	)
+	(port
+		(pt 576 80)
+		(output)
+		(text "Result_Calculator_sop" (rect 0 0 130 19)(font "Intel Clear" (font_size 8)))
+		(text "Result_Calculator_sop" (rect 425 75 555 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 576 80)(pt 560 80))
+	)
+	(port
+		(pt 576 96)
+		(output)
+		(text "Result_Calculator_eop" (rect 0 0 132 19)(font "Intel Clear" (font_size 8)))
+		(text "Result_Calculator_eop" (rect 423 91 555 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 576 96)(pt 560 96))
+	)
+	(port
+		(pt 576 112)
+		(output)
+		(text "Result_Calculator_valid" (rect 0 0 139 19)(font "Intel Clear" (font_size 8)))
+		(text "Result_Calculator_valid" (rect 416 107 555 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 576 112)(pt 560 112))
+	)
+	(parameter
+		"FFT_Inverse"
+		"'0'"
+		""
+		(type "PARAMETER_ENUM")	)
+	(parameter
+		"FFT_In_Data_Width"
+		"16"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"RAM_Size"
+		"13"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"Magnitude_Width"
+		"32"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"FFT_TransformSize"
+		"1024"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"FFT_Max_Transform_Width"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"FFT_Transform_Width"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 560 176))
+	)
+	(annotation_block (parameter)(rect 592 -64 692 16))
+)

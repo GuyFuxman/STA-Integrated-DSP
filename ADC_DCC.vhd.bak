@@ -1,0 +1,55 @@
+-- Name : Ron Krakovsky 
+-- Component : DCC ALTERA with HSMC Conector. 
+-- the adresses for DE10-Standart HSMC.
+-- importent : the clock for DCC need to be phase shift to 180 deg. 
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ADC_DCC is
+
+	port 
+	(
+		i_clk_180deg : in std_logic; -- clock phase shift to 180 deg 
+		
+		FPGA_CLK_A_P : out std_logic;
+		FPGA_CLK_A_N : out std_logic;
+		FPGA_CLK_B_P : out std_logic;
+		FPGA_CLK_B_N : out std_logic;
+		
+		AD_SCLK		 : out std_logic; -- (DFS)Data Format Select
+		AD_SDIO		 : out std_logic; -- (DCS)Duty Cycle Stabilizer Select
+		ADA_OE		 : out std_logic; -- enable ADA output
+		ADB_OE		 : out std_logic; -- enable ADB output
+		ADA_SPI_CS	 : out std_logic; -- disable ADA_SPI_CS (CSB)
+		ADB_SPI_CS	 : out std_logic; -- disable ADB_SPI_CS (CSB)
+		
+		ADA_D		 : in std_logic_vector(13 downto 0); -- data from chanel A
+		ADB_D		 : in std_logic_vector(13 downto 0); -- data from chanel B
+		o_data_A	 : out std_logic_vector(13 downto 0);
+		o_data_B	 : out std_logic_vector(13 downto 0)
+	);
+
+end entity;
+
+
+architecture rtl of ADC_DCC is
+begin
+
+FPGA_CLK_B_N <= not i_clk_180deg;
+FPGA_CLK_B_P <= i_clk_180deg;
+FPGA_CLK_A_N <= not i_clk_180deg;
+FPGA_CLK_A_P <= i_clk_180deg;
+
+ADA_OE <= '0';	
+ADB_OE <= '0';	
+ADA_SPI_CS <= '1'; 
+ADB_SPI_CS <= '1';
+AD_SCLK <= '1';
+AD_SDIO <= '0';
+		
+o_data_A <= ADA_D;
+o_data_B <= ADB_D;
+
+end rtl;

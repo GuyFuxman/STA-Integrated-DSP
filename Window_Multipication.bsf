@@ -1,0 +1,130 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 448 192)
+	(text "Window_Multipication" (rect 5 0 88 12)(font "Arial" ))
+	(text "inst" (rect 8 160 20 172)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "csi_sink_clk" (rect 0 0 48 12)(font "Arial" ))
+		(text "csi_sink_clk" (rect 21 27 69 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "rsi_sink_reset" (rect 0 0 56 12)(font "Arial" ))
+		(text "rsi_sink_reset" (rect 21 43 77 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "asi_sink_valid_data" (rect 0 0 77 12)(font "Arial" ))
+		(text "asi_sink_valid_data" (rect 21 59 98 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "asi_sink_data[width_input_data_bits-1..0]" (rect 0 0 159 12)(font "Arial" ))
+		(text "asi_sink_data[width_input_data_bits-1..0]" (rect 21 75 180 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "asi_sink_sop" (rect 0 0 51 12)(font "Arial" ))
+		(text "asi_sink_sop" (rect 21 91 72 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "asi_sink_eop" (rect 0 0 51 12)(font "Arial" ))
+		(text "asi_sink_eop" (rect 21 107 72 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "asi_sink_valid" (rect 0 0 55 12)(font "Arial" ))
+		(text "asi_sink_valid" (rect 21 123 76 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 432 32)
+		(output)
+		(text "aso_source_data[width_input_data_bits-1..0]" (rect 0 0 174 12)(font "Arial" ))
+		(text "aso_source_data[width_input_data_bits-1..0]" (rect 237 27 411 39)(font "Arial" ))
+		(line (pt 432 32)(pt 416 32)(line_width 3))
+	)
+	(port
+		(pt 432 48)
+		(output)
+		(text "aso_Window_Multipication" (rect 0 0 103 12)(font "Arial" ))
+		(text "aso_Window_Multipication" (rect 308 43 411 55)(font "Arial" ))
+		(line (pt 432 48)(pt 416 48)(line_width 1))
+	)
+	(port
+		(pt 432 64)
+		(output)
+		(text "aso_source_sop" (rect 0 0 67 12)(font "Arial" ))
+		(text "aso_source_sop" (rect 344 59 411 71)(font "Arial" ))
+		(line (pt 432 64)(pt 416 64)(line_width 1))
+	)
+	(port
+		(pt 432 80)
+		(output)
+		(text "aso_source_eop" (rect 0 0 67 12)(font "Arial" ))
+		(text "aso_source_eop" (rect 344 75 411 87)(font "Arial" ))
+		(line (pt 432 80)(pt 416 80)(line_width 1))
+	)
+	(port
+		(pt 432 96)
+		(output)
+		(text "aso_source_valid" (rect 0 0 70 12)(font "Arial" ))
+		(text "aso_source_valid" (rect 341 91 411 103)(font "Arial" ))
+		(line (pt 432 96)(pt 416 96)(line_width 1))
+	)
+	(parameter
+		"samples"
+		"512"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"width_input_data_bits"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"width_memory_data"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 416 160)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 448 -64 548 16))
+)

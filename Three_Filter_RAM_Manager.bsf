@@ -1,0 +1,192 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 464 224)
+	(text "Three_Filter_RAM_Manager" (rect 5 0 125 12)(font "Arial" ))
+	(text "inst" (rect 8 192 20 204)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "i_clk" (rect 0 0 17 12)(font "Arial" ))
+		(text "i_clk" (rect 21 27 38 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "i_reset" (rect 0 0 27 12)(font "Arial" ))
+		(text "i_reset" (rect 21 43 48 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "i_valid" (rect 0 0 24 12)(font "Arial" ))
+		(text "i_valid" (rect 21 59 45 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "i_sop" (rect 0 0 21 12)(font "Arial" ))
+		(text "i_sop" (rect 21 75 42 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "i_eop" (rect 0 0 21 12)(font "Arial" ))
+		(text "i_eop" (rect 21 91 42 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "i_enable" (rect 0 0 31 12)(font "Arial" ))
+		(text "i_enable" (rect 21 107 52 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "i_Magnitude[magnitude_width-1..0]" (rect 0 0 133 12)(font "Arial" ))
+		(text "i_Magnitude[magnitude_width-1..0]" (rect 21 123 154 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "i_Bit_Reversed_Counter[fft_transform_width-1..0]" (rect 0 0 202 12)(font "Arial" ))
+		(text "i_Bit_Reversed_Counter[fft_transform_width-1..0]" (rect 21 139 223 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "i_Filter_Info[1..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "i_Filter_Info[1..0]" (rect 21 155 87 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 448 32)
+		(output)
+		(text "o_Write_Address[ram_size-1..0]" (rect 0 0 132 12)(font "Arial" ))
+		(text "o_Write_Address[ram_size-1..0]" (rect 295 27 427 39)(font "Arial" ))
+		(line (pt 448 32)(pt 432 32)(line_width 3))
+	)
+	(port
+		(pt 448 48)
+		(output)
+		(text "o_Write_Data[magnitude_width-1..0]" (rect 0 0 143 12)(font "Arial" ))
+		(text "o_Write_Data[magnitude_width-1..0]" (rect 284 43 427 55)(font "Arial" ))
+		(line (pt 448 48)(pt 432 48)(line_width 3))
+	)
+	(port
+		(pt 448 64)
+		(output)
+		(text "o_Write_Enable" (rect 0 0 66 12)(font "Arial" ))
+		(text "o_Write_Enable" (rect 361 59 427 71)(font "Arial" ))
+		(line (pt 448 64)(pt 432 64)(line_width 1))
+	)
+	(port
+		(pt 448 80)
+		(output)
+		(text "o_RAM_Mux_Select" (rect 0 0 88 12)(font "Arial" ))
+		(text "o_RAM_Mux_Select" (rect 339 75 427 87)(font "Arial" ))
+		(line (pt 448 80)(pt 432 80)(line_width 1))
+	)
+	(port
+		(pt 448 96)
+		(output)
+		(text "o_Read_Address[ram_size-1..0]" (rect 0 0 132 12)(font "Arial" ))
+		(text "o_Read_Address[ram_size-1..0]" (rect 295 91 427 103)(font "Arial" ))
+		(line (pt 448 96)(pt 432 96)(line_width 3))
+	)
+	(port
+		(pt 448 112)
+		(output)
+		(text "o_sop" (rect 0 0 24 12)(font "Arial" ))
+		(text "o_sop" (rect 403 107 427 119)(font "Arial" ))
+		(line (pt 448 112)(pt 432 112)(line_width 1))
+	)
+	(port
+		(pt 448 128)
+		(output)
+		(text "o_eop" (rect 0 0 24 12)(font "Arial" ))
+		(text "o_eop" (rect 403 123 427 135)(font "Arial" ))
+		(line (pt 448 128)(pt 432 128)(line_width 1))
+	)
+	(port
+		(pt 448 144)
+		(output)
+		(text "o_valid" (rect 0 0 28 12)(font "Arial" ))
+		(text "o_valid" (rect 399 139 427 151)(font "Arial" ))
+		(line (pt 448 144)(pt 432 144)(line_width 1))
+	)
+	(port
+		(pt 448 160)
+		(output)
+		(text "o_Write_Address_Debug[13..0]" (rect 0 0 129 12)(font "Arial" ))
+		(text "o_Write_Address_Debug[13..0]" (rect 298 155 427 167)(font "Arial" ))
+		(line (pt 448 160)(pt 432 160)(line_width 3))
+	)
+	(parameter
+		"FFT_Transform_Width"
+		"14"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"Magnitude_Width"
+		"32"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"RAM_Size"
+		"12"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"First_Stage_Frequency"
+		"3277"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"Second_Stage_Frequency"
+		"4697"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"Third_Stage_Frequency"
+		"6335"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"End_Frequency"
+		"7209"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 432 192)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 464 -64 564 16))
+)

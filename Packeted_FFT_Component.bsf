@@ -1,0 +1,136 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 744 176)
+	(text "Packeted_FFT_Component" (rect 5 0 165 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 139 24 156)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "PLL_Output_Clock" (rect 0 0 109 19)(font "Intel Clear" (font_size 8)))
+		(text "PLL_Output_Clock" (rect 21 27 130 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Reset_Switch" (rect 0 0 79 19)(font "Intel Clear" (font_size 8)))
+		(text "Reset_Switch" (rect 21 43 100 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Added_Sine_Waves[(FFT_In_Data_Width - 1)..0]" (rect 0 0 286 19)(font "Intel Clear" (font_size 8)))
+		(text "Added_Sine_Waves[(FFT_In_Data_Width - 1)..0]" (rect 21 59 307 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "NCO_Valid" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "NCO_Valid" (rect 21 75 85 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 728 32)
+		(output)
+		(text "aso_source_Bit_Reversed_Counter[(FFT_Transform_Width - 1)..0]" (rect 0 0 387 19)(font "Intel Clear" (font_size 8)))
+		(text "aso_source_Bit_Reversed_Counter[(FFT_Transform_Width - 1)..0]" (rect 320 27 707 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 728 32)(pt 712 32)(line_width 3))
+	)
+	(port
+		(pt 728 48)
+		(output)
+		(text "aso_source_FFT_real_data[(FFT_In_Data_Width - 1)..0]" (rect 0 0 325 19)(font "Intel Clear" (font_size 8)))
+		(text "aso_source_FFT_real_data[(FFT_In_Data_Width - 1)..0]" (rect 382 43 707 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 728 48)(pt 712 48)(line_width 3))
+	)
+	(port
+		(pt 728 64)
+		(output)
+		(text "aso_source_FFT_imag_data[(FFT_In_Data_Width - 1)..0]" (rect 0 0 332 19)(font "Intel Clear" (font_size 8)))
+		(text "aso_source_FFT_imag_data[(FFT_In_Data_Width - 1)..0]" (rect 375 59 707 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 728 64)(pt 712 64)(line_width 3))
+	)
+	(port
+		(pt 728 80)
+		(output)
+		(text "Packet_Manager_sop" (rect 0 0 126 19)(font "Intel Clear" (font_size 8)))
+		(text "Packet_Manager_sop" (rect 581 75 707 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 728 80)(pt 712 80))
+	)
+	(port
+		(pt 728 96)
+		(output)
+		(text "Packet_Manager_eop" (rect 0 0 127 19)(font "Intel Clear" (font_size 8)))
+		(text "Packet_Manager_eop" (rect 580 91 707 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 728 96)(pt 712 96))
+	)
+	(port
+		(pt 728 112)
+		(output)
+		(text "Packet_Manager_valid" (rect 0 0 134 19)(font "Intel Clear" (font_size 8)))
+		(text "Packet_Manager_valid" (rect 573 107 707 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 728 112)(pt 712 112))
+	)
+	(parameter
+		"FFT_Inverse"
+		"'0'"
+		""
+		(type "PARAMETER_ENUM")	)
+	(parameter
+		"FFT_In_Data_Width"
+		"16"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"RAM_Size"
+		"13"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"Magnitude_Width"
+		"32"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"FFT_TransformSize"
+		"1024"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"FFT_Max_Transform_Width"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"FFT_Transform_Width"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 712 144))
+	)
+	(annotation_block (parameter)(rect 744 -64 844 16))
+)
